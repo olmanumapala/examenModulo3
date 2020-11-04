@@ -54,6 +54,11 @@
 							"script": {
 								"id": "cdf21422-39b5-441e-85f4-fe6f1cae3798",
 								"exec": [
+									"pm.test(\"Body matches string\", function () {\r",
+									"    var jsonData = \"Jhon Cena\";\r",
+									"    pm.expect(pm.response.text()).to.include(\"Jhon Cena\");\r",
+									"});\r",
+									"\r",
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
 									"});"
