@@ -54,12 +54,8 @@
 							"script": {
 								"id": "cdf21422-39b5-441e-85f4-fe6f1cae3798",
 								"exec": [
-									"pm.test(\"Body matches string\", function () {\r",
+									"pm.test(\"User correct\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include('name');\r",
-									"});\r",
-									"\r",
-									"pm.test(\"Body not matches string\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"Please login first\");\r",
 									"});\r",
 									"\r",
 									"pm.test(\"Status code is 200\", function () {\r",
