@@ -1,16 +1,25 @@
 pipeline {
-   agent any
-   stages {
-      stage('Newman Tests') {
-         steps {            
-            sh '''            
-            cd api/newman
-            newman run examenPostman.postman_collection.json -e base_envi.postman_environment.json
-            '''            
-         }        
-      }
-   }
-   stage('Jmeter Tests') {
+    agent any
+    stages {
+        stage('Newman Tests') {
+            steps {
+                    sh '''
+                    cd api/newman
+                    newman run Examen.postman_collection.json -e herokuExamen.postman_environment.json               
+                    '''
+            }
+        }
+        //stage('RestAssured Tests') {
+           // steps {
+              //  catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+                //    sh '''
+                  //      cd api/rest_assured
+                    //    mvn clean test
+                      //  '''
+            //    }
+          //  }              
+        //}
+        stage('Jmeter Tests') {
             steps {
                 sh '''
                 cd load
@@ -19,4 +28,5 @@ pipeline {
                 '''
             }
         }
+    }
 }
