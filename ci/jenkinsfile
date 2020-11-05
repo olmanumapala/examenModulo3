@@ -5,7 +5,7 @@ pipeline {
             steps {
                     sh '''
                     cd api/newman
-                    newman run Examen.postman_collection.json -e herokuExamen.postman_environment.json               
+                    newman run base_envi.postman_environment.json -e examenPostman.postman_collection.json               
                     '''
             }
         }
