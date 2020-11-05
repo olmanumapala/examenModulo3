@@ -14,7 +14,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c4624226-cf8f-4442-8f31-6a21b3cddbc8",
+								"id": "24a67b58-be7f-421d-be1a-454643eff03a",
 								"exec": [
 									"pm.test(\"Verify Status\", function() {\r",
 									"var jsonData = pm.response.json();\r",
@@ -52,7 +52,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "cdf21422-39b5-441e-85f4-fe6f1cae3798",
+								"id": "aa232718-8b41-4a4e-a14e-765bfffd018b",
 								"exec": [
 									"pm.test(\"User correct\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include('name');\r",
@@ -81,6 +81,42 @@
 									"type": "string"
 								}
 							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/v1/examen/randomName",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1",
+								"examen",
+								"randomName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "testRandomNameNonAuth",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3ee2caed-39fe-4835-b7c5-d5b9a4d42333",
+								"exec": [
+									"pm.test(\"User correct\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include('Please login first');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
 						},
 						"method": "GET",
 						"header": [],
