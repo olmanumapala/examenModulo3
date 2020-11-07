@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Localhost" duration-ms="9131" started-at="2020-11-06T19:28:37 CST" finished-at="2020-11-06T19:28:46 CST">
+    <groups>
+    </groups>
+    <test name="ExamenFinal" duration-ms="9131" started-at="2020-11-06T19:28:37 CST" finished-at="2020-11-06T19:28:46 CST">
+      <class name="RestAssuredTest">
+        <test-method status="PASS" signature="SetRestAssured(java.lang.String)[pri:0, instance:RestAssuredTest@50b494a6]" name="SetRestAssured" is-config="true" duration-ms="725" started-at="2020-11-06T19:28:37 CST" finished-at="2020-11-06T19:28:37 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://api-coffee-testing.herokuapp.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetRestAssured -->
+        <test-method status="PASS" signature="Before()[pri:0, instance:RestAssuredTest@50b494a6]" name="Before" is-config="true" duration-ms="1" started-at="2020-11-06T19:28:37 CST" finished-at="2020-11-06T19:28:37 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Before -->
+        <test-method status="PASS" signature="PostSameName_Test()[pri:0, instance:RestAssuredTest@50b494a6]" name="PostSameName_Test" duration-ms="4220" started-at="2020-11-06T19:28:37 CST" finished-at="2020-11-06T19:28:42 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PostSameName_Test -->
+        <test-method status="PASS" signature="Before()[pri:0, instance:RestAssuredTest@50b494a6]" name="Before" is-config="true" duration-ms="0" started-at="2020-11-06T19:28:42 CST" finished-at="2020-11-06T19:28:42 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Before -->
+        <test-method status="PASS" signature="PutName_Test()[pri:0, instance:RestAssuredTest@50b494a6]" name="PutName_Test" duration-ms="856" started-at="2020-11-06T19:28:42 CST" finished-at="2020-11-06T19:28:42 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PutName_Test -->
+        <test-method status="PASS" signature="Before()[pri:0, instance:RestAssuredTest@50b494a6]" name="Before" is-config="true" duration-ms="1" started-at="2020-11-06T19:28:42 CST" finished-at="2020-11-06T19:28:42 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Before -->
+        <test-method status="PASS" signature="RandomeNameAuth_Test()[pri:0, instance:RestAssuredTest@50b494a6]" name="RandomeNameAuth_Test" duration-ms="1272" started-at="2020-11-06T19:28:42 CST" finished-at="2020-11-06T19:28:44 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RandomeNameAuth_Test -->
+        <test-method status="PASS" signature="Before()[pri:0, instance:RestAssuredTest@50b494a6]" name="Before" is-config="true" duration-ms="1" started-at="2020-11-06T19:28:44 CST" finished-at="2020-11-06T19:28:44 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Before -->
+        <test-method status="PASS" signature="RandomeNameNonAuth_Test()[pri:0, instance:RestAssuredTest@50b494a6]" name="RandomeNameNonAuth_Test" duration-ms="1073" started-at="2020-11-06T19:28:44 CST" finished-at="2020-11-06T19:28:45 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RandomeNameNonAuth_Test -->
+        <test-method status="PASS" signature="Before()[pri:0, instance:RestAssuredTest@50b494a6]" name="Before" is-config="true" duration-ms="1" started-at="2020-11-06T19:28:45 CST" finished-at="2020-11-06T19:28:45 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Before -->
+        <test-method status="PASS" signature="Status_Test()[pri:0, instance:RestAssuredTest@50b494a6]" name="Status_Test" duration-ms="919" started-at="2020-11-06T19:28:45 CST" finished-at="2020-11-06T19:28:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Status_Test -->
+      </class> <!-- RestAssuredTest -->
+    </test> <!-- ExamenFinal -->
+  </suite> <!-- Localhost -->
+</testng-results>
